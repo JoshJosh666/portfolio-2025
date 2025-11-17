@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Aurora</title>
+  <meta name="description" content="Café Aurora — specialty coffee, pastries, and a cozy atmosphere.">
+  <meta name="keywords" content="coffee shop, cafe, pastries, latte, cafe website">
+  <meta name="author" content="Your Name">
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Café Aurora",
+    "description": "Café Aurora — specialty coffee, pastries, and a cozy atmosphere.",
+    "servesCuisine": "Coffee, Pastries",
+    "priceRange": "$$",
+    "address": "123 Cafe Lane, Your City, ST 12345"
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#" class="logo"><h3>Café Aurora</h3></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="https://placehold.co/40x40/000/fff?text=☰" id="menu-icon" alt="Menu Icon">
+      <img src="https://placehold.co/40x40/000/fff?text=X" id="close-icon" alt="Close Icon" style="display: none;">
+    </button>
+  </nav>
+  <div class="hero">
+    <h1>Café Aurora</h1>
+    <p>Where comfort meets flavor — handcrafted drinks & pastries</p>
+    <a class="btn" href="#menu">View Menu</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p class="section-text">Your cozy local café for specialty coffee, pastries, and a warm inviting atmosphere.</p>
+  <div class="about-wrapper">
+    <img src="Cafe.png" alt="The cozy exterior of Café Aurora, nestled in nature." loading="lazy" />
+    <div class="about-text">
+      <p>Café Aurora was created for people who love simple moments — sipping warm coffee, studying with soft music, or chatting with friends. Our beans are sourced from local farmers and our pastries are baked fresh daily.</p>
+      <p>Relax, unwind, and enjoy the taste of comfort.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <p class="section-text">Crafted with care to give you the best café experience.</p>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Specialty Coffee</h3>
+      <p>Premium blends brewed to perfection.</p>
+    </div>
+    <div class="service-card">
+      <h3>Fresh Pastries</h3>
+      <p>Baked every morning using real ingredients.</p>
+    </div>
+    <div class="service-card">
+      <h3>Chill Atmosphere</h3>
+      <p>Perfect for studying, working, or relaxing.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>What Our Customers Say</h2>
+  <p class="section-text">We love our customers, and they love us back!</p>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <img src="https://i.pravatar.cc/100?img=1" alt="Customer photo" loading="lazy">
+      <p>"The best coffee in town! The atmosphere is so cozy and perfect for a relaxing afternoon."</p>
+      <h4>— Sarah L.</h4>
+      <div class="stars" aria-label="5 out of 5 stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <img src="https://i.pravatar.cc/100?img=2" alt="Customer photo" loading="lazy">
+      <p>"I come here to study all the time. Great Wi-Fi, amazing pastries, and friendly staff."</p>
+      <h4>— David Chen</h4>
+      <div class="stars" aria-label="5 out of 5 stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <img src="https://i.pravatar.cc/100?img=3" alt="Customer photo" loading="lazy">
+      <p>"A true hidden gem. Their seasonal drinks are a must-try. I'll be back for more!"</p>
+      <h4>— Maria G.</h4>
+      <div class="stars" aria-label="5 out of 5 stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <h2>Best Sellers</h2>
+  <p class="section-text">Our customers can't get enough of these favorites.</p>
+
+  <div class="menu-gallery">
+    <figure>
+      <img src="latte.png" alt="A cup of latte with intricate foam art." loading="lazy" />
+      <figcaption>Classic Latte</figcaption>
+    </figure>
+    <figure>
+      <img src="croissant.png" alt="A freshly baked, flaky croissant on a plate." loading="lazy" />
+      <figcaption>Golden Butter Croissant</figcaption>
+    </figure>
+    <figure>
+      <img src="ice.png" alt="A refreshing glass of iced coffee." loading="lazy" />
+      <figcaption>Creamy Iced Latte</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="promo-banner">
+  <div class="promo-content">
+    <h2>Holiday Drinks Are Here!</h2>
+    <p>Try our new Creamy Iced Latte and get into the festive spirit.</p>
+    <a href="#menu" class="btn">See More</a>
+  </div>
+</div>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+
+  <form>
+    <label for="name" class="sr-only">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
+    <label for="email" class="sr-only">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" required />
+    <label for="message" class="sr-only">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+    <button>Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <div class="social-icons">
+    <a href="#" aria-label="Facebook"><img src="https://placehold.co/24x24/fff/000?text=f" alt="Facebook"></a>
+    <a href="#" aria-label="Instagram"><img src="https://placehold.co/24x24/fff/000?text=ig" alt="Instagram"></a>
+    <a href="#" aria-label="TikTok"><img src="https://placehold.co/24x24/fff/000?text=tk" alt="TikTok"></a>
+  </div>
+  <p class="footer-text">© 2025 Café Aurora — Brewed with Love</p>
+</footer>
+
+<a href="#" class="back-to-top" aria-label="Back to top" title="Back to Top">↑</a>
+
+<script src="script.js"></script>
+</body>
+</html>
